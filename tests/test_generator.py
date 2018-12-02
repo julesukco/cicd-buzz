@@ -18,3 +18,7 @@ def test_sample_multiple_words():
 def test_generate_buzz_of_at_least_five_words():
     phrase = generator.generate_buzz()
     assert len(phrase.split()) >= 5
+
+def test_generate_buzz_of_no_more_than_7_words():
+    phrase = generator.generate_buzz()
+    assert len(phrase.split()) <= 7
